@@ -1,0 +1,39 @@
+defaults:
+  - base_config
+  - _self_  
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled
+
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .
+  sweep:
+    dir: /data/tomburgert/data/hydra_multirun3
+
+params:
+  seed: 1
+  cuda_no: 5
+  max_epochs: 100
+  dataset: food101
+  num_workers: 1
+  batch_size: 32
+  pin_memory: true
+dataaug:
+  train_augmentations: 'none'
+  test_augmentations: 'none'
+model:
+  name: resnet50
+  pretrained: false
+optimizer:
+  optimizer_name: 'adam_w'
+  scheduler_name: 'cos_anneal_warm_restart'
+  lr: 0.0001
+  momentum: 0.9
+  weight_decay: 0.0001
+  t_0: 10
+  t_mult: 2
+  eta_min: 0.000001
+logging:
+  save_checkpoint: true
+  exp_dir: /data/tomburgert/data/logs
