@@ -1,9 +1,8 @@
 # Feature Reliance: Official Implementation
 
-Official implementation of  
-**“ImageNet-trained CNNs are not biased towards texture: Revisiting feature reliance through controlled suppression”**  - Tom Burgert, Oliver Stoll, Paolo Rota, Begüm Demir | 
-NeurIPS 2025 (oral)  
-[Paper on arXiv](https://arxiv.org/abs/2509.20234)
+This repository is the official implementation of **“ImageNet-trained CNNs are not biased towards texture: Revisiting feature reliance through controlled suppression”**  - Tom Burgert, Oliver Stoll, Paolo Rota, Begüm Demir @ *NeurIPS 2025 (oral)*
+
+[![arXiv](https://img.shields.io/badge/arXiv-2509.20234-b31b1b.svg)](https://arxiv.org/abs/2509.20234)
 
 ## Abstract / Description
 
