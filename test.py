@@ -22,11 +22,6 @@ def update_dataset_parameter(cfg, dataset):
 
     cfg.dataset.task         = yaml_file[dataset]['task']
     cfg.dataset.root_path    = yaml_file[dataset]['root_path']
-    cfg.dataset.lmdb_path    = yaml_file[dataset]['lmdb_path']
-    cfg.dataset.labels_path  = yaml_file[dataset]['labels_path']
-    cfg.dataset.train_csv    = yaml_file[dataset]['train_csv']
-    cfg.dataset.val_csv      = yaml_file[dataset]['val_csv']
-    cfg.dataset.test_csv     = yaml_file[dataset]['test_csv']
     cfg.dataset.num_classes  = yaml_file[dataset]['num_classes']
     cfg.dataset.num_channels = yaml_file[dataset]['num_channels']
 

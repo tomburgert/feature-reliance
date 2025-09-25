@@ -1,5 +1,4 @@
 import timm
-from robustbench.utils import load_model
 
 
 valid_model_names = [

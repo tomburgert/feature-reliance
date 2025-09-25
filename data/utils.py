@@ -1,8 +1,6 @@
 from computer_vision.caltech import Caltech101DataModule
 from computer_vision.flowers import Flowers102DataModule
-from computer_vision.food import Food101DataModule
 from computer_vision.oxfordpet import OxfordIIITPetDataModule
-from computer_vision.stanfordcars import StanfordCarsDataModule
 from computer_vision.stl10 import STL10DataModule
 from computer_vision.imagenet import ImageNetDataModule
 from computer_vision.imagenet16 import ImageNet16DataModule
@@ -25,12 +23,8 @@ def get_datamodule(dataset):
         return Caltech101DataModule
     elif dataset == 'flowers102':
         return Flowers102DataModule
-    elif dataset == 'food101':
-        return Food101DataModule
     elif dataset == 'oxfordiiitpet':
         return OxfordIIITPetDataModule
-    elif dataset == 'stanfordcars':
-        return StanfordCarsDataModule
     elif dataset == 'stl10':
         return STL10DataModule
     elif dataset == 'imagenet':

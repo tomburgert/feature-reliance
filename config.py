@@ -39,15 +39,7 @@ class DataAugmentationParameter:
 class Dataset:
     domain: str = 'computer_vision'
     task: str = ''
-    intersection_8country: bool = True
-    all_percentiles: bool = False
-    global_pctl: bool = False
     root_path: str = ''
-    lmdb_path: str = ''
-    labels_path: str = ''
-    train_csv: str = ''
-    val_csv: str = ''
-    test_csv: str = ''
     num_classes: Optional[int] = None
     num_channels: Optional[int] = None
 
@@ -78,7 +70,6 @@ class Logging:
     exp_dir: str = ''
     ckpt_path: Optional[str] = None
     save_checkpoint : bool = False
-    # classwise_eval: bool = True
     classwise_eval: bool = False
     track_test_probs: bool = False
 
