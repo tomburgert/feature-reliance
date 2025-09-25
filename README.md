@@ -9,6 +9,8 @@ NeurIPS 2025 (oral)
 
 This repository provides code to reproduce the experiments in the paper. The work revisits the hypothesis that CNNs are inherently biased toward texture. It proposes a domain-agnostic framework for **controlled suppression** of cues (shape, texture, color) and quantifies feature reliance. Our results show that CNNs are not inherently texture-biased but mainly depend on local shape features. Extending the analysis across domains, we find systematic differences: vision models lean on shape, medical imaging on color, and remote sensing on texture.
 
+![Overview of the method](method_overview.png)
+
 ## Installation
 
 Install dependencies with pip. By default, the commands below install CPU wheels.  
