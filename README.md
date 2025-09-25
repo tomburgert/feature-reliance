@@ -6,7 +6,7 @@ This repository is the official implementation of **“ImageNet-trained CNNs are
 
 ## Abstract / Description
 
-This repository provides code to reproduce the experiments in the paper. The work revisits the hypothesis that CNNs are inherently biased toward texture. It proposes a domain-agnostic framework for **controlled suppression** of cues (shape, texture, color) and quantifies feature reliance. Our results show that CNNs are not inherently texture-biased but mainly depend on local shape features. Extending the analysis across domains, we find systematic differences: vision models lean on shape, medical imaging on color, and remote sensing on texture.
+This repository provides code to reproduce the experiments in the paper. The work revisits the hypothesis that CNNs are inherently biased toward texture [Geirhos et al., ICLR 2019]. It proposes a domain-agnostic framework for **controlled suppression** of cues (shape, texture, color) and quantifies feature reliance. Our results show that CNNs are not inherently texture-biased but mainly depend on local shape features. Extending the analysis across domains, we find systematic differences: vision models lean on shape, medical imaging on color, and remote sensing on texture.
 
 ![Overview of the method](method_overview.png)
 
