@@ -23,3 +23,5 @@ Thumbs.db
 *.log
 *.tmp
 
+# Ignore other
+._*
